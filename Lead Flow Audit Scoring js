@@ -1,5 +1,6 @@
 (function () {
-  const ATE_CONST = true; // If you're using this somewhere
+  if (window.__ate_script_loaded__) return;
+  window.__ate_script_loaded__ = true;
 
   function waitForFormAndInit() {
     const form = document.querySelector("form");
