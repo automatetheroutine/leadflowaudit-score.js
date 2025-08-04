@@ -1,4 +1,6 @@
 (function () {
+  const ATE_CONST = true; // If you're using this somewhere
+
   function waitForFormAndInit() {
     const form = document.querySelector("form");
     if (!form) return setTimeout(waitForFormAndInit, 200);
